@@ -7,9 +7,9 @@ const { PromptTemplate } = require('langchain/prompts');
 const { StructuredOutputParser } = require('langchain/output_parsers');
 
 const model = new OpenAI({
-    openAIApiKey: process.env.apiKey,
+    openAIApiKey: process.env.OPENAI_API_KEY,
     temperature: 0,
-    model: 'gpt-3.5-turbo'
+    model: 'gpt-4o-mini'
 });
 //console.log({model})
 
